@@ -1,5 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+
+
+
+
+@font-face {
+    font-family: 'os_aran_ffc400';
+    src: url('os_aran_400ffc-webfont.woff2') format('woff2'), url('os_aran_400ffc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'os_aran_r_ffc600';
+    src: url('os_aran_r_600ffc-webfont.woff2') format('woff2'), url('os_aran_r_600ffc-webfont.woff') format('woff'), font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'os_aran_w_ffc500';
+    src: url('os_aran_w_500ffc-webfont.woff2') format('woff2'), url('os_aran_w_500ffc-webfont.woff') format('woff'), font-weight: normal;
+    font-style: normal;
+}
+
 *:after {
   clear: both;
   content: "";
@@ -19,20 +42,20 @@ body {
   padding: 0;
 }
 
-body {  
-  color: #12358f;
-  font-family: Open sans, futura-pt, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+body {
+    color: #12358f;
+    font-family: os_aran_ffc400;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
     background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .page-center {
@@ -142,20 +165,20 @@ body input[type="color"],
 body input[type="file"],
 body textarea,
 body select {
-  width: 100%;
-  border-radius: 3px;
-  background-color: #ffffff;
-  border: solid 0.5px #dbdbdb;
-  line-height: 1.2;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.79;
-  letter-spacing: 0.1px;
-  font-size: 14px;
-  font-family: Open Sans;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 0.5px #dbdbdb;
+    line-height: 1.2;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    font-family: os_aran_ffc400;
 }
 
 
@@ -183,24 +206,24 @@ body .btn,
 body input[type="submit"],
 body input[type="button"],
 .btn {
-  cursor: pointer;
-  -webkit-appearance: none;
-  text-decoration: none !important;
-  display: inline-block;
-  text-align: center;
-  outline: none;
-  vertical-align: middle;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.1px;
-  box-shadow: none;
-  border: 0;
-  padding: 9px 30px;
-  border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-decoration: none !important;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    vertical-align: middle;
+    font-family: os_aran_ffc400;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+    box-shadow: none;
+    border: 0;
+    padding: 9px 30px;
+    border-radius: 3px;
 }
 
 
@@ -218,7 +241,7 @@ body input[type="button"],
     background: 0 0;
     font-size: 37px;
     line-height: normal;
-    font-family: frank-ruhl-w26-regular,serif;
+    font-family: os_aran_ffc400;
     margin: 20px 0;
 }
 .socail-media-icons li {
@@ -252,26 +275,26 @@ h3 {
     vertical-align: baseline;
     background: 0 0;
     line-height: normal;
-    font-family: almoni-dl-aaa-700,sans-serif;
+    font-family: os_aran_ffc400;
     font-size: 36px;
     margin: 20px 0;
 }
-h2{
-  text-decoration: underline;
-  margin: 20px 0;
-  padding: 0;
-  font: normal normal bold 70px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: 0 0;
-  font-family: shabazi-w26-bold,serif;
-  color: #FF0000;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: normal;
-  letter-spacing: normal;
-  text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+h2 {
+    text-decoration: underline;
+    margin: 20px 0;
+    padding: 0;
+    font: normal normal bold 70px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
+    font-family: os_aran_ffc400;
+    color: #FF0000;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
 }
 h4 {
     letter-spacing: 0.05em;
@@ -282,7 +305,7 @@ h4 {
     outline: 0;
     vertical-align: baseline;
     background: 0 0;
-    font-family: frank-ruhl-w26-regular,serif;
+    font-family: os_aran_ffc400;
     font-size: 27px;
     line-height: normal;
     color: #3A3629;
@@ -290,7 +313,7 @@ h4 {
 h5 {
     font: normal normal bold 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
     color: #3A3629;
-    font-family: almoni-dl-aaa-700,sans-serif;
+    font-family: os_aran_ffc400;
     line-height: normal;
     letter-spacing: normal;
     font-size: 27px;
@@ -330,7 +353,7 @@ h5 {
     width: 100%;
     transition: inherit;
     color: #FFFFFF;
-    font-family: shabazi-w26-bold,serif;
+    font-family: os_aran_ffc400;
     font-size: 30px;
     background: red;
     font-size: 30px;
