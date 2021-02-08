@@ -15,6 +15,45 @@
         display: none
     }
 </style>
+<style>
+    ul, #myUL {
+        list-style-type: none;
+    }
+
+    #myUL {
+        margin: 0;
+        padding: 0;
+    }
+
+    .caret {
+        cursor: pointer;
+        -webkit-user-select: none; /* Safari 3.1+ */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none;
+    }
+
+        .caret::before {
+            content: "\25B6";
+            color: black;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+    .caret-down::before {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        ' transform: rotate(90deg);
+    }
+
+    .nested {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+</style>
 <body>
 
     <!-- Navbar -->
@@ -26,7 +65,7 @@
             <a href="#list" class="w3-bar-item w3-button w3-padding-large w3-hide-small">List</a>
             <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Categories</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Map</a>
-            
+
             <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
         </div>
     </div>
@@ -257,17 +296,241 @@
                     <li class="w3-padding"><img src="icons/Depositphotos_285845064_s-2019.jpg" height="42" width="42" />World Tourism Organization (UNWTO)</li>
                     <li class="w3-padding"><img src="icons/Depositphotos_144816221_s-2019.jpg" height="42" width="42" />World Trade Organization (WTO)3</li>
                 </ul>
+                <br />
+                <!-- https://www.w3schools.com/howto/howto_js_treeview.asp -->
+                <ul class="w3-ul w3-border w3-white w3-text-grey" id="myUL">
+                    <li class="w3-padding">
+                        <span class="caret">
+                            <img src="icons/‏‏‏‏Depositphotos_332586646_s-2019.jpg" alt="Security council" height="42" width="42" />
+                            1. Security council
+                        </span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">
+                                    SUBSIDIARY ORGANS
+                                </span>
+                                <ul class="nested">
+                                    <li>Peacekeeping operations and political missions</li>
+                                    <li>Military Staff Committee</li>
+                                    <li>International Residual Mechanism for Criminal Tribunals</li>
+                                    <li>Non-proliferation committee</li>
+                                    <li>Counter-terrorism committee</li>
+                                    <li>
+                                        <span class="caret">
+                                            Standing Committees and ad hoc bodies
+                                        </span>
+                                        <ul class="nested">
+                                            <li>UN Compensation commission</li>
+                                            <li>Working group on children and armed conﬂict</li>
+                                        </ul>
+                                    </li>
+                                    <li>Sanctions Committee</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w3-padding">
+                        <span class="caret">
+                            <img src="icons/Depositphotos_144816221_s-2019.jpg" alt="general assembly" height="42" width="42" />
+                            2. General assembly
+                        </span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">
+                                    SUBSIDIARY ORGAN
+                                </span>
+                                <ul class="nested">
+                                    <li>Main Committees</li>
+                                    <li>Joint Inspection Unit</li>
+                                    <li>Human Rights Council</li>
+                                    <li>Standing Committees and ad hoc bodies</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    RELATED ORGANIZATIONS
+                                </span>
+                                <ul class="nested">
+                                    <li>Int. Criminal Court</li>
+                                    <li>Int. Seabed Authority (ISA)</li>
+                                    <li>Int. Tribunal for the Law of the Sea (ITLOS)</li>
+                                    <li>Int. Organization for Migration (IOM)</li>
+                                    <li>Org. for the Prohibition of Chemical Weapons (OPCW)</li>
+                                    <li>Int. Atomic Energy Agency (IAEA)</li>
+                                    <li>World Trade Organization (WTO)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    TRAINING AND RESEARCH
+                                </span>
+                                <ul class="nested">
+                                    <li>UN System Staff College (UNSSC)</li>
+                                    <li>UN Institute for Training and Research (UNITAR)</li>
+                                    <li>UN Institute for Disarmament Research (UNIDIR)</li>
+                                    <li>UN University (UNU)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    OTHER ENTITIE
+                                </span>
+                                <ul class="nested">
+                                    <li>UN Conference on Trade and Development (UNCTAD)</li>
+                                    <li>UN Relief and Work Agency (UNRWA)</li>
+                                    <li>UN Entity for Gender Equality and the Empowerment of Women (UN-WOMEN)</li>
+                                    <li>UN Oﬃce for Protection Services (UNOPS)</li>
+                                    <li>UN High Commissioner for Refugees (UNHCR)</li>
+                                    <li>Int. Trade Center (ITC)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    FUNDS AND PROGRAMMES
+                                </span>
+                                <ul class="nested">
+                                    <li>UN Development Programme (UNDP)</li>
+                                    <li>UN Environment Programme (UNEP)</li>
+                                    <li>UN Human Settlements Habitat (UN-HABITAT)</li>
+                                    <li>UN Population Fund (UNFPA)</li>
+                                    <li>World Food Programme (WFP)</li>
+                                    <li>UN Children's Fund (UNICEF)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w3-padding">
+                        <span class="caret">
+                            <img src="icons/Depositphotos_285845064_s-2019.jpg" alt="economic and social council" height="42" width="42" />
+                            3. Economic and social council
+                        </span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">
+                                    RESEARCH AND TRAINING
+                                </span>
+                                <ul class="nested">
+                                    <li>UN Interregional Crime and Justice Research Institute (UNCRI)</li>
+                                    <li>UN Research Institute for Social Development (UNRISD)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    REGIONAL COMMISSION
+                                </span>
+                                <ul class="nested">
+                                    <li>Economic and social Commission (ESCAP)</li>
+                                    <li>Economic Commission for Europe (ECE)</li>
+                                    <li>Economic Commission for Latin America and the Caribbean (ECLAC)</li>
+                                    <li>Economic and Social Commission for Asia and the Paciﬁc (ESCWA)</li>
+                                    <li>Economic Commission for Africa (ECA)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    SPECIALIZED AGENCIES
+                                </span>
+                                <ul class="nested">
+                                    <li>Food and Agriculture Org. (FAO)</li>
+                                    <li>Int. Civil Aviation Org. (ICAO)</li>
+                                    <li>Int. Labour Org.(ILO)</li>
+                                    <li>Int. Maritime Org. (IMO)</li>
+                                    <li>UN Educational, Scientiﬁc and Cultural Org. (UNESCO)</li>
+                                    <li>World Tourism Org. (UNWTO)</li>
+                                    <li>World Health Org. (WHO)</li>
+                                    <li>World Meteorological Org. (WMO)</li>
+                                    <li>Int. Fund for Agricultural Development (IFAD)</li>
+                                    <li>Int. Monetary Fund (IMF)</li>
+                                    <li>Int. Telecommunication Union (ITU)</li>
+                                    <li>UN Industrial Development org. (UNIDO)</li>
+                                    <li>Universal Postal Union (UPU)</li>
+                                    <li>World Intellectual Property Org. (WIPO)</li>
+                                    <li>WORLD BANK GROUP</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">
+                                    OTHER BODIES
+                                </span>
+                                <ul class="nested">
+                                    <li>UN Group of Experts on Geographical Names (UNGEGN)</li>
+                                    <li>Permanent forum on Indigenous issues</li>
+                                    <li>Joint UN Programme on HIV/AIDS (UNAIDS)</li>
+                                    <li>Committee on experts on public administration</li>
+                                    <li>Committee of Experts on Global Geospatial Info Management (UNGGIM)</li>
+                                    <li>Commission on the Status of Women (CSW)</li>
+                                    <li>Committee on NonGovernmental organizations</li>
+                                    <li>Committee for development policy</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w3-padding">
+                        <span class="caret">
+                            <img src="icons/Depositphotos_163459836_s-2019.jpg" alt="secretariat" height="42" width="42" />
+                            4. Secretariat
+                        </span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">
+                                    DEPARTMENTS AND OFFICES
+                                </span>
+                                <ul class="nested">
+                                    <li>Executive Oﬃce of the Secretary-General (EOSG)</li>
+                                    <li>Development Coordination Oﬃce (DCO)</li>
+                                    <li>Department of Economic and Social Affairs (DESA)</li>
+                                    <li>Department for General Assembly and Conference Management (DGACM)</li>
+                                    <li>Department of Global Communications (DGC)</li>
+                                    <li>Department of Management Strategy, Policy and Compliance (DMSPC)</li>
+                                    <li>Department of Operational Support (DOS)</li>
+                                    <li>Department of Peace Operations (DPO)</li>
+                                    <li>Department of Political and Peacebuilding Affairs (DPPA)</li>
+                                    <li>Department of Safety and Security (DSS)</li>
+                                    <li>Oﬃce for the Coordination of Humanitarian Affairs (OCHA)</li>
+                                    <li>Oﬃce of CounterTerrorism (OCT)</li>
+                                    <li>Oﬃce of Internal Oversight Services (OIOS)</li>
+                                    <li>Oﬃce for Disarmament Affairs (ODA)</li>
+                                    <li>Oﬃce of the United Nations High Commissioner for Human Rights (OHCHR)</li>
+                                    <li>Oﬃce of Legal Affairs (OLA)</li>
+                                    <li>Oﬃce of the Special Adviser on Africa (OLSAA)</li>
+                                    <li>Department of Political Affairs (DPA)</li>
+                                    <li>UN Oﬃce for Disaster Risk Reduction (UNDRR)</li>
+                                    <li>UN Oﬃce on Drugs and Crime (UNODC)</li>
+                                    <li>UN-OHRLLS</li>
+                                    <li>Department of Public Information (DPI)</li>
+                                    <li>UN Oﬃce for Partnership (UNOP)</li>
+                                    <li>Special Representative of the Secretary-General of Sexual Violence in Conﬂict</li>
+                                    <li>Special Representative of the Secretary-General on Violence against Children</li>
+                                    <li>Special Representative of the Secretary-General for Children and Armed Conﬂict</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w3-padding">
+                        <img src="icons/Depositphotos_21640605_s-2019.jpg" alt="court of justice" height="42" width="42" />
+                        5. Court of justice
+                    </li>
+                    <li class="w3-padding">
+                        <img src="icons/Depositphotos_275434600_s-2019.jpg" alt="trusteeship council" height="42" width="42" />
+                        6. Trusteeship council
+                    </li>
 
 
+                </ul>
+
+               
             </div>
         </div>
 
 
 
+       
+       
+
         <!-- The Contact Section -->
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-            <h2 class="w3-wide w3-center">CONTACT</h2>
-            <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+            <h2 class="w3-wide w3-center">Tree</h2>
+            <p class="w3-opacity w3-center"><i>Click on item in order to open it</i></p>
             <div class="w3-row w3-padding-32">
                 <div class="w3-col m6 w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
@@ -309,40 +572,43 @@
     </footer>
 
     <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000);
-}
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
     </script>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
 
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
 </body>
 </html>
